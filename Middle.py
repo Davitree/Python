@@ -1,6 +1,10 @@
-firstLetter = input("1st letter:")
-secondLetter = input("2nd letter:")
-thirdLetter = input("3rd letter:")
-lst = [firstLetter,secondLetter,thirdLetter]
-lst.sort()
-print(f"The letter in the middle is {lst[1]}")
+a = input("1st letter:")
+b = input("2nd letter:")
+c = input("3rd letter:")
+if a>b>c or a<b<c:
+  middle = b;
+elif b<a<c or b>a>c:
+  middle = a;
+else:
+  middle =c
+print("The letter in the middle is",middle)
